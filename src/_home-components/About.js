@@ -9,11 +9,11 @@ import PrimarySection from '../_components/PrimarySection';
 import Container from '../_components/Container';
 import SectionTitle from '../_components/SectionTitle';
 import Paragraph from '../_components/Paragraph';
+import Image from 'next/image';
 import trustpilot from '../_assets/images/trustpilot.png';
 import travelIcon from '../_assets/images/travel-icon.png';
 import happyTraveler1 from '../_assets/images/happy-traveler1.png';
 import happyTraveler2 from '../_assets/images/happy-traveler2.png';
-import Image from 'next/image';
 
 const StyledContainer = styled(Container)`
   display: flex;
@@ -33,8 +33,6 @@ const LeftContainer = styled.div`
 `;
 
 export default function About() {
-  console.log(process.env);
-
   return (
     <PrimarySection id="about" pt="0" pb="100px">
       <StyledContainer>

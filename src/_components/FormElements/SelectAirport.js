@@ -1,7 +1,9 @@
-'use client'
+'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import { baseURL } from '../../config';
 import styled from 'styled-components';
+
+console.log(process.env.NODE_ENV);
 
 const Wrapper = styled.div`
   display: flex;

@@ -1,11 +1,11 @@
-"use client"
+'use client';
 import styled from 'styled-components';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { formatDate } from '../_utils/formatDate';
+import { redirect } from 'next/navigation';
 import { updateFormField, updateQuantity } from '../_redux/slices/ticketForm';
 import { FaPlaneDeparture, FaPlaneArrival, FaCircle } from 'react-icons/fa';
-import { redirect } from 'next/navigation';
+import { formatDate } from '../_utils/formatDate';
 import Label from '../_components/FormElements/Label';
 import PrimaryButton from '../_components/PrimaryButton';
 import SelectAirport from '../_components/FormElements/SelectAirport';
@@ -136,7 +136,6 @@ export default function TicketForm() {
     e.preventDefault();
     if (isFormValid()) {
       redirect('/booking/select-flights');
-      window.scrollTo(0, 0);
     }
   };
 

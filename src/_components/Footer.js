@@ -9,6 +9,7 @@ import {
 import styled from 'styled-components';
 import Container from '../_components/Container';
 import Paragraph from '../_components/Paragraph';
+import Link from 'next/link';
 
 const StyledFooter = styled.footer`
   padding: 50px 0;
@@ -92,13 +93,13 @@ function CopyrightText() {
         © 2024 TRAVL Technologies. All Rights Reserved.
       </StyledCopyrightText>
       <LegalLinks color="white" textAlign="center">
-        <a href="/terms-and-conditions" className="color-white">
+        <Link href="/terms-and-conditions" className="color-white">
           Terms & Conditions
-        </a>
+        </Link>
         {'     '}|{'     '}
-        <a href="/privacy-policy" className="color-white">
+        <Link href="/privacy-policy" className="color-white">
           Privacy Policy
-        </a>
+        </Link>
       </LegalLinks>
     </>
   );

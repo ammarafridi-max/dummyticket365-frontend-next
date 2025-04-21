@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import styled from 'styled-components';
 import TicketForm from './TicketForm';
 import PrimarySection from '../_components/PrimarySection';

@@ -1,14 +1,10 @@
 'use client';
 import styled from 'styled-components';
-import {
-  HiOutlineClock,
-  HiOutlineCurrencyDollar,
-  HiCheck,
-} from 'react-icons/hi2';
 import Container from '../_components/Container';
 import PrimarySection from '../_components/PrimarySection';
 import Paragraph from '../_components/Paragraph';
 import SectionTitle from '../_components/SectionTitle';
+import { CheckIcon, Clock3Icon, DollarSign } from 'lucide-react';
 
 const Row = styled.div`
   display: grid;
@@ -32,17 +28,17 @@ export default function Benefits() {
         </SectionTitle>
         <Row>
           <IconCard
-            icon={<HiCheck />}
+            icon={<CheckIcon size={24} color="green" />}
             title="Reliable"
             text="We use official airline reservation systems to create genuine and verifiable dummy tickets, ensuring they are accepted by consulates and embassies worldwide."
           />
           <IconCard
-            icon={<HiOutlineClock />}
+            icon={<Clock3Icon />}
             title="Quick"
             text="Our streamlined process lets you receive a verifiable dummy ticket instantly. Simply complete a short form, and your ticket will be delivered via email within minutes."
           />
           <IconCard
-            icon={<HiOutlineCurrencyDollar />}
+            icon={<DollarSign />}
             title="Affordable"
             text="Starting at only AED 49, we provide high-quality dummy tickets at the best rates, making them accessible and affordable for everyone."
           />

@@ -16,15 +16,18 @@ export default function FAQAccordion({ question, children }) {
         <h3>{question}</h3>
         {showAnswer ? <HiOutlineMinus /> : <HiOutlinePlus />}
       </QuestionDiv>
-      {/* {showAnswer && <AnswerDiv>{children}</AnswerDiv>} */}
       <AnswerDiv showAnswer={showAnswer}>{children}</AnswerDiv>
     </AccordionContainer>
   );
 }
 
 const AccordionContainer = styled.div`
-  margin-bottom: 20px;
   width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
 `;
 
 const QuestionDiv = styled.div`
