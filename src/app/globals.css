@@ -1,42 +1,106 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-color-50: #e2f7fb;
+  --primary-color-100: #c1ecf6;
+  --primary-color-200: #95dff0;
+  --primary-color-300: #64cde6;
+  --primary-color-400: #36badc;
+  --primary-color-500: #009dc4; /* Base */
+  --primary-color-600: #007fa3;
+  --primary-color-700: #006583;
+  --primary-color-800: #004d64;
+  --primary-color-900: #00394c;
+  --grey-color-50: rgb(248, 248, 248);
+  --grey-color-100: rgb(240, 240, 240);
+  --grey-color-200: rgb(226, 226, 226);
+  --grey-color-300: rgb(210, 210, 210);
+  --grey-color-400: rgb(195, 195, 195);
+  --grey-color-500: rgb(180, 180, 180);
+  --grey-color-600: rgb(150, 150, 150);
+  --grey-color-700: rgb(120, 120, 120);
+  --grey-color-800: rgb(90, 90, 90);
+  --grey-color-900: rgb(60, 60, 60);
+  --grey-color-950: rgb(30, 30, 30);
+  --input-radius-sm: 5px;
+  --input-radius-md: 8px;
+  --input-radius-lg: 10px;
+  --input-box-shadow: 0px 0px 5px -1px rgba(160, 160, 160, 1);
+  --input-box-shadow-sm: 0px 0px 5px -1px rgba(160, 160, 160, 1);
+  --text-color: #ededed;
+  --neutral-color: #b0b6b8;
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Variable', sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Nunito Variable', sans-serif;
+}
+
+input,
+button,
+select,
+option {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
   padding: 0;
   margin: 0;
+  font-weight: 400;
+}
+
+p.small {
+  font-size: 15px;
+}
+
+p.large {
+  font-size: 17px;
+}
+
+p.x-large {
+  font-size: 18px;
+}
+
+.semi-bold {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 a {
-  color: inherit;
+  color: var(--primary-color-500);
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.section-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  padding-bottom: 50px;
+  padding-top: 0;
+  margin: 0;
+}
+
+.color-white {
+  color: white;
+}
+
+.primary-color {
+  color: var(--primary-color-500);
+}
+
+@media only screen and (max-width: 991.5px) {
+  .section-heading {
+    font-size: 32px;
   }
 }
