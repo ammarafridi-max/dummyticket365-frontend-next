@@ -2,15 +2,16 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { formatDate } from '../_utils/formatDate';
 import { updateFormField, updateQuantity } from '../_redux/slices/ticketForm';
 import { FaPlaneDeparture, FaPlaneArrival, FaCircle } from 'react-icons/fa';
+import { redirect } from 'next/navigation';
 import Label from '../_components/FormElements/Label';
 import PrimaryButton from '../_components/PrimaryButton';
 import SelectAirport from '../_components/FormElements/SelectAirport';
 import SelectDate from '../_components/FormElements/SelectDate';
 import Counter from '../_components/FormElements/Counter';
+import Error from '@/_components/Error';
 
 const Form = styled.form`
   margin: 0;
@@ -81,7 +82,6 @@ const SearchButton = styled(PrimaryButton)``;
 
 export default function TicketForm() {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const { formData } = useSelector((state) => state.ticketForm);
   const [errorMessages, setErrorMessages] = useState({});
 
@@ -135,7 +135,7 @@ export default function TicketForm() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (isFormValid()) {
-      navigate('/booking/select-flights');
+      redirect('/booking/select-flights');
       window.scrollTo(0, 0);
     }
   };

@@ -1,6 +1,7 @@
+"use client"
 import styled from 'styled-components';
-import PrimarySection from '../_components/PrimarySection';
 import TicketForm from './TicketForm';
+import PrimarySection from '../_components/PrimarySection';
 import Container from '../_components/Container';
 import PageTitle from '../_components/PageTitle';
 
@@ -83,35 +84,3 @@ export default function Hero() {
     </PrimarySection>
   );
 }
-
-// function Form() {
-//   const [currentForm, setCurrentForm] = useState('ticket');
-
-//   return (
-//     <>
-//       {currentForm === 'ticket' && <TicketForm />}
-//       {currentForm === 'hotel' && <HotelForm />}
-//       <div className={`row ${styles.iconContainer}`}>
-//         <div
-//         className={`${styles.iconWithText} ${
-//           currentForm === "ticket" && styles.active
-//         }`}
-//         onClick={() => setCurrentForm("ticket")}
-//         >
-//         <IoIosAirplane className={styles.icon} />
-//         <p>Flights</p>
-//         </div>
-
-//         <div
-//         className={`${styles.iconWithText} ${
-//           currentForm === "hotel" && styles.active
-//         }`}
-//         onClick={() => setCurrentForm("hotel")}
-//         >
-//         <MdHotel className={styles.icon} />
-//         <p>Hotels</p>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }

@@ -1,4 +1,3 @@
-'use client'
 import { IoIosRemove, IoIosAdd } from 'react-icons/io';
 import styled from 'styled-components';
 
