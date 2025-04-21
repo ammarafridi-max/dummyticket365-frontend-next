@@ -2,6 +2,7 @@ import Navigation from "@/_components/Navigation";
 import "./globals.css";
 import "@fontsource-variable/nunito"
 import Footer from "@/_components/Footer";
+import MobileNavigation from "@/_components/MobileNavigation";
 
 export const metadata = {
   title: "Create Next App",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navigation />
+        <MobileNavigation />
         {children}
         <Footer />
       </body>

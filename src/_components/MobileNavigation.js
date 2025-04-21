@@ -2,9 +2,10 @@
 import { useState } from 'react';
 import { pages } from './Navigation';
 import { HiOutlineXMark, HiOutlineBars3 } from 'react-icons/hi2';
-import logo from '../assets/images/logo-long.png';
-import Container from '../components/Container';
+import logo from '../_assets/images/logo-long.png';
+import Container from '../_components/Container';
 import styled from 'styled-components';
+import Image from 'next/image';
 
 const Nav = styled.nav`
   display: none;
@@ -30,6 +31,7 @@ const LogoDiv = styled.a`
   justify-content: center;
   & img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 `;
@@ -58,7 +60,7 @@ export default function MobileNavigation() {
     <Nav>
       <StyledContainer>
         <LogoDiv href="/">
-          <img
+          <Image
             src={logo}
             alt="My Dummy Ticket Logo"
             title="My Dummy Ticket Logo"
