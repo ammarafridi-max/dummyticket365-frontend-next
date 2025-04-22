@@ -24,8 +24,8 @@ export default function FlightError() {
     <Container>
       <H1>Flights not found</H1>
       <P>
-        We're sorry, but we couldn't load the flights at this time. This could
-        be due to a technical issue or missing data.
+        We&apos;re sorry, but we couldn&apos;t load the flights at this time.
+        This could be due to a technical issue or missing data.
       </P>
       <PrimaryButton as="a" href="/">
         Back to Home

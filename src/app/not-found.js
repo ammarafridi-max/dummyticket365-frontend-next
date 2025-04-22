@@ -10,7 +10,7 @@ export default function PageNotFound() {
         <div className={styles.wrapper}>
           <h1 className={styles.title}>404 Error!</h1>
           <h2 className={styles.subtitle}>
-            Sorry, but the page you're looking for doesn't exist.
+            Sorry, but the page you&apos;re looking for doesn&apos;t exist.
           </h2>
           <PrimaryButton href="/">Back To Home</PrimaryButton>
         </div>

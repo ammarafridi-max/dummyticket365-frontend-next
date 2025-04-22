@@ -155,7 +155,7 @@ function PassengerData({ passengers, handleUpdatePassenger, passengerErrors }) {
           label = `Infant ${++infantCount}`;
         }
         return (
-          <FormItem>
+          <FormItem key={index}>
             <Label>{label}</Label>
             <PassengerFields>
               <Title
@@ -303,8 +303,8 @@ function TicketValidityOptions({ ticketValidity, handleValidityChange }) {
     <TicketValidityWrapper>
       <Label htmlFor="ticketValidity">Choose Ticket Validity</Label>
       <TicketValidityBox>
-        {options.map((option) => (
-          <Option>
+        {options.map((option, index) => (
+          <Option key={index}>
             <input
               type="radio"
               name="ticketValidity"

@@ -53,7 +53,7 @@ export default function Contact() {
           </SectionTitle>
           <Paragraph fontSize="18px" py="25px">
             Still have questions or doubts about our service? Feel free to send
-            us an email. We'd be happy to help you out.
+            us an email. We&apos;d be happy to help you out.
           </Paragraph>
           <PrimaryButton as="a" href="mailto:info@dummyticket365.com">
             Email Us

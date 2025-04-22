@@ -2,6 +2,7 @@ import logo from '../assets/images/logo-long.png';
 import styles from '../_styles/navigation.module.css';
 import Container from '../components/Container';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const pages = [
   { name: 'Book Now', link: '/#form' },
@@ -27,13 +28,13 @@ export default function Navigation() {
 function LogoContainer() {
   return (
     <div className={styles.logo}>
-      <a href="/">
+      <Link href="/">
         <Image
           src={logo}
           alt="Dummy Ticket 365 Logo"
           title="Dummy Ticket 365 Logo"
         />
-      </a>
+      </Link>
     </div>
   );
 }
