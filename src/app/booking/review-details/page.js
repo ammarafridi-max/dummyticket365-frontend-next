@@ -3,7 +3,6 @@ import styles from './review-details.module.css';
 import styled from 'styled-components';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FaSpinner } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
@@ -19,7 +18,6 @@ export default function ReviewDetails() {
   const { stripeStatus, data, stripeError } = useSelector(
     (state) => state.createTicket
   );
-  const navigate = useNavigate();
   const sessionId = localStorage.getItem('SESSION_ID');
 
   let additionalPrice = 0;
@@ -70,10 +68,6 @@ export default function ReviewDetails() {
       window.location.href = data.url;
     }
   }, [stripeStatus, data]);
-
-  const handleNavigate = async () => {
-    navigate('/booking/select-flights');
-  };
 
   let content;
 

@@ -1,5 +1,4 @@
 'use client';
-import { Helmet } from 'react-helmet';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchFlights } from '../../../redux/slices/fetchFlights';
@@ -8,6 +7,7 @@ import PrimaryButton from '../../../components/PrimaryButton';
 import Error from '../../../components/Error';
 import Skeleton from '../../../components/FlightCard/Skeleton';
 import FlightError from '../../../components/FlightError';
+import Head from 'next/head';
 
 export default function SelectFlights() {
   const dispatch = useDispatch();
@@ -32,9 +32,9 @@ export default function SelectFlights() {
 
   return (
     <>
-      <Helmet>
-        <title>Select Your Flight</title>
-      </Helmet>
+      <Head>
+        <title>Select Flights</title>
+      </Head>
       {status === 'loading' && (
         <>
           <Skeleton />

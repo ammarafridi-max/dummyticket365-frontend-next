@@ -1,7 +1,8 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { redirect } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { baseURL } from '../../config';
 import { selectFlightError } from '../../redux/slices/selectFlight';
 
@@ -20,7 +21,7 @@ function generatePassengerList(quantity) {
 }
 
 export function useHandleForm(flight) {
-  const navigate = useNavigate();
+  const router = useRouter();
   const flightError = useSelector(selectFlightError);
   const dummyPrice = 12;
   const { formData } = useSelector((state) => state.ticketForm);
@@ -157,7 +158,7 @@ export function useHandleForm(flight) {
         }
         const data = await res.json();
         localStorage.setItem('SESSION_ID', data.sessionId);
-        navigate('/booking/review-details');
+        router.push('/booking/review-details');
       } catch (error) {
         console.error('Error:', error);
         alert('Failed to create the ticket. Please try again.');

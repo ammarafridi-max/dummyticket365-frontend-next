@@ -8,20 +8,28 @@ export const createTicket = createAsyncThunk(
     try {
       const sessionId = localStorage.getItem('SESSION_ID');
       if (!sessionId) {
-        return rejectWithValue('Session ID is missing. Please restart the process.');
+        return rejectWithValue(
+          'Session ID is missing. Please restart the process.'
+        );
       }
-      const response = await axios.post(`${baseURL}/api/ticket/buy-ticket`, ticketDetails, {
-        headers: {
-          'X-Session-ID': sessionId,
-        },
-      });
+      const response = await axios.post(
+        `${baseURL}/api/ticket/buy-ticket`,
+        ticketDetails,
+        {
+          headers: {
+            'X-Session-ID': sessionId,
+          },
+        }
+      );
       if (response.status === 200) {
         return response.data;
       } else {
         return rejectWithValue(response.data.message);
       }
     } catch (error) {
-      return rejectWithValue(error.response?.data || 'An unexpected error occurred.');
+      return rejectWithValue(
+        error.response?.data || 'An unexpected error occurred.'
+      );
     }
   }
 );
