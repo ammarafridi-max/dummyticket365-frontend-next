@@ -2,12 +2,12 @@
 import { Helmet } from 'react-helmet';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchFlights } from '../../../_redux/slices/fetchFlights';
-import FlightCard from '../../../_components/FlightCard/FlightCard';
-import PrimaryButton from '../../../_components/PrimaryButton';
-import Error from '../../../_components/Error';
-import Skeleton from '../../../_components/FlightCard/Skeleton';
-import FlightError from '../../../_components/FlightError';
+import { fetchFlights } from '../../../redux/slices/fetchFlights';
+import FlightCard from '../../../components/FlightCard/FlightCard';
+import PrimaryButton from '../../../components/PrimaryButton';
+import Error from '../../../components/Error';
+import Skeleton from '../../../components/FlightCard/Skeleton';
+import FlightError from '../../../components/FlightError';
 
 export default function SelectFlights() {
   const dispatch = useDispatch();

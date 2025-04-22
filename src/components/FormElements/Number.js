@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { countryCodes } from '../../_assets/data/countryCodes';
+import { countryCodes } from '../../assets/data/countryCodes';
 
 const Wrapper = styled.div`
   width: 100%;

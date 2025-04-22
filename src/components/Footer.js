@@ -7,8 +7,8 @@ import {
   FaCcMastercard,
 } from 'react-icons/fa';
 import styled from 'styled-components';
-import Container from '../_components/Container';
-import Paragraph from '../_components/Paragraph';
+import Container from './Container';
+import Paragraph from './Paragraph';
 import Link from 'next/link';
 
 const StyledFooter = styled.footer`

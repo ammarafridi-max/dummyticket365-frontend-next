@@ -1,6 +1,7 @@
 import './globals.css';
 import '@fontsource-variable/nunito';
-import Layout from '@/_components/Layout';
+import Layout from '@/components/Layout';
+import { StyledComponentsRegistry } from '@/lib/registry';
 
 export default function RootLayout({ children }) {
   return (
@@ -9,7 +10,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.png" />
       </head>
       <body>
-        <Layout>{children}</Layout>
+        <StyledComponentsRegistry>
+          <Layout>{children}</Layout>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

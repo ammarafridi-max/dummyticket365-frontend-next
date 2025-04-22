@@ -1,11 +1,11 @@
 'use client';
-import { faqArray } from '@/_assets/data/faqs';
+import { faqArray } from '@/assets/data/faqs';
 import styled from 'styled-components';
-import SectionTitle from '../_components/SectionTitle';
-import PrimarySection from '../_components/PrimarySection';
-import Container from '../_components/Container';
-import FAQAccordion from '../_components/FAQAccordion';
-import PrimaryButton from '../_components/PrimaryButton';
+import SectionTitle from '../components/SectionTitle';
+import PrimarySection from '../components/PrimarySection';
+import Container from '../components/Container';
+import FAQAccordion from '../components/FAQAccordion';
+import PrimaryButton from '../components/PrimaryButton';
 
 const ButtonContainer = styled.div`
   display: flex;

@@ -1,11 +1,11 @@
 'use client';
 import styled from 'styled-components';
-import img from '../_assets/images/contact-img.png';
-import PrimarySection from '../_components/PrimarySection';
-import Container from '../_components/Container';
-import SectionTitle from '../_components/SectionTitle';
-import PrimaryButton from '../_components/PrimaryButton';
-import Paragraph from '../_components/Paragraph';
+import img from '../assets/images/contact-img.png';
+import PrimarySection from '../components/PrimarySection';
+import Container from '../components/Container';
+import SectionTitle from '../components/SectionTitle';
+import PrimaryButton from '../components/PrimaryButton';
+import Paragraph from '../components/Paragraph';
 import Image from 'next/image';
 
 const StyledContainer = styled(Container)`
@@ -60,7 +60,11 @@ export default function Contact() {
           </PrimaryButton>
         </LeftContainer>
         <ImageContainer>
-          <Image src={img} alt="Contact Dummy Ticket 365 Now" />
+          <Image
+            src={img}
+            alt="Contact Dummy Ticket 365 now and improve your chances of securing your visa"
+            title="Top-rated dummy tickets provider in the world"
+          />
         </ImageContainer>
       </StyledContainer>
     </PrimarySection>

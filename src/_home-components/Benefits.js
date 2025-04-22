@@ -1,9 +1,9 @@
 'use client';
 import styled from 'styled-components';
-import Container from '../_components/Container';
-import PrimarySection from '../_components/PrimarySection';
-import Paragraph from '../_components/Paragraph';
-import SectionTitle from '../_components/SectionTitle';
+import Container from '../components/Container';
+import PrimarySection from '../components/PrimarySection';
+import Paragraph from '../components/Paragraph';
+import SectionTitle from '../components/SectionTitle';
 import { CheckIcon, Clock3Icon, DollarSign } from 'lucide-react';
 
 const Row = styled.div`
@@ -40,7 +40,7 @@ export default function Benefits() {
           <IconCard
             icon={<DollarSign />}
             title="Affordable"
-            text="Starting at only AED 49, we provide high-quality dummy tickets at the best rates, making them accessible and affordable for everyone."
+            text="Starting at only USD 12, we provide high-quality dummy tickets at the best rates, making them accessible and affordable for everyone."
           />
         </Row>
       </Container>

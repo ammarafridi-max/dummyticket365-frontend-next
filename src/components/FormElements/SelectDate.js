@@ -1,8 +1,8 @@
-'use client'
+'use client';
 import { useRef, useState, useEffect } from 'react';
-import { FaCalendarAlt } from 'react-icons/fa';
 import styled from 'styled-components';
 import Calendar from './Calendar';
+import { CalendarDaysIcon } from 'lucide-react';
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   -moz-box-shadow: var(--input-box-shadow);
 `;
 
-const Icon = styled(FaCalendarAlt)`
+const Icon = styled(CalendarDaysIcon)`
   font-size: 16px;
   margin: 0;
 `;

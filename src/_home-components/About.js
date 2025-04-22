@@ -1,19 +1,15 @@
 'use client';
 import styled from 'styled-components';
-import {
-  MdOutlineAirplaneTicket,
-  MdOutlineHealthAndSafety,
-  MdOutlineHotel,
-} from 'react-icons/md';
-import PrimarySection from '../_components/PrimarySection';
-import Container from '../_components/Container';
-import SectionTitle from '../_components/SectionTitle';
-import Paragraph from '../_components/Paragraph';
+import PrimarySection from '../components/PrimarySection';
+import Container from '../components/Container';
+import SectionTitle from '../components/SectionTitle';
+import Paragraph from '../components/Paragraph';
 import Image from 'next/image';
-import trustpilot from '../_assets/images/trustpilot.png';
-import travelIcon from '../_assets/images/travel-icon.png';
-import happyTraveler1 from '../_assets/images/happy-traveler1.png';
-import happyTraveler2 from '../_assets/images/happy-traveler2.png';
+import trustpilot from '../assets/images/trustpilot.png';
+import travelIcon from '../assets/images/travel-icon.png';
+import happyTraveler1 from '../assets/images/happy-traveler1.png';
+import happyTraveler2 from '../assets/images/happy-traveler2.png';
+import { BedDouble, ShieldPlus, TicketsPlane } from 'lucide-react';
 
 const StyledContainer = styled(Container)`
   display: flex;
@@ -48,17 +44,17 @@ export default function About() {
             satisfied customers annually.
           </Paragraph>
           <IconWithText
-            icon={<MdOutlineAirplaneTicket />}
+            icon={<TicketsPlane strokeWidth={1.75} />}
             title="Dummy Tickets"
             description="Dummy ticket are used as proof of onward travel for visa applications or airport requirements."
           />
           <IconWithText
-            icon={<MdOutlineHotel />}
+            icon={<BedDouble strokeWidth={1.75} />}
             title="Hotel Reservations"
             description="Verifiable hotel bookings often required for visa applications, ensuring proof of stay."
           />
           <IconWithText
-            icon={<MdOutlineHealthAndSafety />}
+            icon={<ShieldPlus strokeWidth={1.75} />}
             title="Travel Insurance"
             description="Comprehensive policies covering medical emergencies, trip cancellations, and travel delays."
           />
@@ -126,13 +122,15 @@ function Gallery() {
         <SmallImage>
           <Image
             src={trustpilot}
-            alt="My Dummy Ticket has received over 50 reviews on Trustpilot, with an average rating of 4.5+"
+            alt="Dummy Ticket 365 has received over 50 reviews on Trustpilot, with an average rating of 4.5+"
+            title="Dummy Ticket 365 on Trustpilot"
           />
         </SmallImage>
         <LargeImage>
           <Image
             src={happyTraveler1}
-            alt="A happy couple receiving their Schengen visa"
+            alt="A happy couple receiving their Schengen visa thanks to the dummy ticket they bought with us."
+            title="Book your flight reservation with Dummy Ticket 365"
           />
         </LargeImage>
       </Col1>
@@ -140,13 +138,15 @@ function Gallery() {
         <LargeImage>
           <Image
             src={happyTraveler2}
-            alt="A happy couple with their passports, dummy tickets, and other related documents for their visa appointment"
+            alt="A happy couple with their passports, dummy tickets, and other related documents, ready for their visa appointment"
+            title="Happy couple ready for their visa appointment."
           />
         </LargeImage>
         <SmallImage>
           <Image
             src={travelIcon}
             alt="Dummy tickets, hotel reservations, and travel insurance"
+            title="We provide all kinds of services for visa assistance."
           />
         </SmallImage>
       </Col2>

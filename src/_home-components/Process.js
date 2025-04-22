@@ -1,8 +1,8 @@
 'use client';
 import styled from 'styled-components';
-import PrimarySection from '../_components/PrimarySection';
-import Container from '../_components/Container';
-import SectionTitle from '../_components/SectionTitle';
+import PrimarySection from '../components/PrimarySection';
+import Container from '../components/Container';
+import SectionTitle from '../components/SectionTitle';
 
 const Row = styled.div`
   display: grid;

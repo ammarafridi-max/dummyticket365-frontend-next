@@ -66,8 +66,8 @@ export default function TestimonialCard({ title, name, src, children, type }) {
       <ImageContainer>
         <Image
           src={src}
-          alt={`Testimonial by ${name} about My Dummy Ticket`}
-          title={`Testimonial by ${name} about My Dummy Ticket`}
+          alt={`Testimonial by ${name} about Dummy Ticket 365`}
+          title={`Testimonial by ${name} about Dummy Ticket 365`}
         />
       </ImageContainer>
     </Card>

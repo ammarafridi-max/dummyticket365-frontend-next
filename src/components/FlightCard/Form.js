@@ -1,6 +1,6 @@
 'use client';
 import styled from 'styled-components';
-import { formatDate } from '../../_utils/formatDate';
+import { formatDate } from '../../utils/formatDate';
 import { useHandleForm } from './useHandleForm';
 import PrimaryButton from '../PrimaryButton';
 import Error from '../Error';

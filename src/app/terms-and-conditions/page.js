@@ -1,8 +1,8 @@
-import PrimarySection from '../../_components/PrimarySection';
-import Container from '../../_components/Container';
-import PageTitle from '../../_components/PageTitle';
-import SectionTitle from '../../_components/SectionTitle';
-import Paragraph from '../../_components/Paragraph';
+import PrimarySection from '../../components/PrimarySection';
+import Container from '../../components/Container';
+import PageTitle from '../../components/PageTitle';
+import SectionTitle from '../../components/SectionTitle';
+import Paragraph from '../../components/Paragraph';
 
 export const metadata = {
   title: 'Terms & Conditions',

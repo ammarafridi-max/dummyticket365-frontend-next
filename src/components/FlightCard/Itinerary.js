@@ -1,7 +1,7 @@
 'use client';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import { formatISODuration } from '../../_utils/formatISODuration';
-import { formatISOTime } from '../../_utils/formatISOTime';
+import { formatISODuration } from '../../utils/formatISODuration';
+import { formatISOTime } from '../../utils/formatISOTime';
 import { baseURL } from '../../config';
 import styled from 'styled-components';
 

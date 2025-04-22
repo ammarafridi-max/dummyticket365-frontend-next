@@ -1,4 +1,3 @@
-'use client'
 import styled from 'styled-components';
 import { useState } from 'react';
 import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
@@ -90,7 +89,9 @@ const Cell = styled.div`
   align-items: center;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 
   ${({ isDisabled, isOutOfMonth }) =>
     (isDisabled || isOutOfMonth) &&
@@ -119,7 +120,9 @@ const Number = styled.span`
   justify-content: center;
   align-items: center;
   background-color: rgb(240, 240, 240);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
   &:hover {
     background-color: var(--primary-color-500);
     color: white;
@@ -183,8 +186,16 @@ const Calendar = ({ onDateClick, isDateDisabled }) => {
   };
 
   const renderCells = () => {
-    const monthStart = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
-    const monthEnd = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+    const monthStart = new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      1
+    );
+    const monthEnd = new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth() + 1,
+      0
+    );
     const startDate = new Date(monthStart);
     startDate.setDate(startDate.getDate() - startDate.getDay());
     const endDate = new Date(monthEnd);

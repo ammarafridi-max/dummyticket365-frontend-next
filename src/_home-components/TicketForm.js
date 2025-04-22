@@ -3,15 +3,16 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { redirect } from 'next/navigation';
-import { updateFormField, updateQuantity } from '../_redux/slices/ticketForm';
+import { updateFormField, updateQuantity } from '../redux/slices/ticketForm';
 import { FaPlaneDeparture, FaPlaneArrival, FaCircle } from 'react-icons/fa';
-import { formatDate } from '../_utils/formatDate';
-import Label from '../_components/FormElements/Label';
-import PrimaryButton from '../_components/PrimaryButton';
-import SelectAirport from '../_components/FormElements/SelectAirport';
-import SelectDate from '../_components/FormElements/SelectDate';
-import Counter from '../_components/FormElements/Counter';
-import Error from '@/_components/Error';
+import { formatDate } from '../utils/formatDate';
+import Label from '../components/FormElements/Label';
+import PrimaryButton from '../components/PrimaryButton';
+import SelectAirport from '../components/FormElements/SelectAirport';
+import SelectDate from '../components/FormElements/SelectDate';
+import Counter from '../components/FormElements/Counter';
+import Error from '@/components/Error';
+import { PlaneLandingIcon, PlaneTakeoff } from 'lucide-react';
 
 const Form = styled.form`
   margin: 0;
@@ -163,7 +164,7 @@ export default function TicketForm() {
           <SelectAirport
             value={formData.from}
             onChange={(value) => handleFieldChange('from', value)}
-            icon={<FaPlaneDeparture />}
+            icon={<PlaneTakeoff />}
           />
           {errorMessages?.from && <Error>{errorMessages.from}</Error>}
         </FormRow>
@@ -174,7 +175,7 @@ export default function TicketForm() {
           <SelectAirport
             value={formData.to}
             onChange={(value) => handleFieldChange('to', value)}
-            icon={<FaPlaneArrival />}
+            icon={<PlaneLandingIcon />}
           />
           {errorMessages?.to && <Error>{errorMessages.to}</Error>}
         </FormRow>

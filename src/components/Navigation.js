@@ -1,6 +1,6 @@
-import logo from '../_assets/images/logo-long.png';
+import logo from '../assets/images/logo-long.png';
 import styles from '../_styles/navigation.module.css';
-import Container from '../_components/Container';
+import Container from '../components/Container';
 import Image from 'next/image';
 
 export const pages = [
@@ -8,7 +8,7 @@ export const pages = [
   { name: 'Process', link: '/#process' },
   { name: 'About', link: '/#about' },
   { name: 'FAQ', link: '#faq' },
-  { name: 'Contact', link: 'mailto:info@mydummyticket.ae' },
+  { name: 'Contact', link: 'mailto:info@dummyticket365.com' },
 ];
 
 export default function Navigation() {
@@ -30,8 +30,8 @@ function LogoContainer() {
       <a href="/">
         <Image
           src={logo}
-          alt="My Dummy Ticket Logo"
-          title="My Dummy Ticket Logo"
+          alt="Dummy Ticket 365 Logo"
+          title="Dummy Ticket 365 Logo"
         />
       </a>
     </div>

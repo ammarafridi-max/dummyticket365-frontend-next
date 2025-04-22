@@ -1,9 +1,9 @@
-"use client"
+'use client';
 import { useState } from 'react';
 import { pages } from './Navigation';
 import { HiOutlineXMark, HiOutlineBars3 } from 'react-icons/hi2';
-import logo from '../_assets/images/logo-long.png';
-import Container from '../_components/Container';
+import logo from '../assets/images/logo-long.png';
+import Container from './Container';
 import styled from 'styled-components';
 import Image from 'next/image';
 

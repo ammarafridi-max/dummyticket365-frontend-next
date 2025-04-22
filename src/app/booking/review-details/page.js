@@ -7,11 +7,11 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { FaSpinner } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
-import { createTicket } from '../../../_redux/slices/createTicket';
-import { fetchFormDetails } from '../../../_redux/slices/fetchTicketDetails';
-import { formatDate } from '../../../_utils/formatDate';
-import PrimaryButton from '../../../_components/PrimaryButton';
-import PageTitle from '../../../_components/PageTitle';
+import { createTicket } from '../../../redux/slices/createTicket';
+import { fetchFormDetails } from '../../../redux/slices/fetchTicketDetails';
+import { formatDate } from '../../../utils/formatDate';
+import PrimaryButton from '../../../components/PrimaryButton';
+import PageTitle from '../../../components/PageTitle';
 
 export default function ReviewDetails() {
   const dispatch = useDispatch();

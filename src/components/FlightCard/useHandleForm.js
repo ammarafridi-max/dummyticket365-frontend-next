@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { baseURL } from '../../config';
-import { selectFlightError } from '../../_redux/slices/selectFlight';
+import { selectFlightError } from '../../redux/slices/selectFlight';
 
 function generatePassengerList(quantity) {
   const passengers = [];

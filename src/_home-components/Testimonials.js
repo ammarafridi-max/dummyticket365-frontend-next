@@ -1,11 +1,11 @@
 'use client';
-import Container from '../_components/Container';
-import PrimarySection from '../_components/PrimarySection';
-import TestimonialCard from '../_components/TestimonialCard';
-import SectionTitle from '../_components/SectionTitle';
-import david from '../_assets/images/david.webp';
-import maria from '../_assets/images/maria.webp';
-import ahmed from '../_assets/images/ahmed.webp';
+import Container from '../components/Container';
+import PrimarySection from '../components/PrimarySection';
+import TestimonialCard from '../components/TestimonialCard';
+import SectionTitle from '../components/SectionTitle';
+import david from '../assets/images/david.webp';
+import maria from '../assets/images/maria.webp';
+import ahmed from '../assets/images/ahmed.webp';
 import styled from 'styled-components';
 
 const testimonials = [

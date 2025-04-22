@@ -1,9 +1,9 @@
 'use client';
 import styled from 'styled-components';
 import TicketForm from './TicketForm';
-import PrimarySection from '../_components/PrimarySection';
-import Container from '../_components/Container';
-import PageTitle from '../_components/PageTitle';
+import PrimarySection from '../components/PrimarySection';
+import Container from '../components/Container';
+import PageTitle from '../components/PageTitle';
 
 const StyledContainer = styled(Container)`
   display: flex;
